@@ -1,0 +1,18 @@
+<package>
+  <name>libphidgets</name>
+  <version>1.6.0</version>
+  <description>This package wraps the libphidgets to use it as a ros dependency</description>
+  <maintainer email="Joshua.Hampp@ipa.fhg.de">Joshua Hampp</maintainer>
+  <license>LGPL</license>
+
+  <url type="website">http://ros.org/wiki/libphidgets</url>
+  <url type="bugtracker">http://care-o-bot.org/trac</url>
+
+  <author>Florian Weisshardt</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+    <cpp lflags="-L${prefix}/lib -lphidget21" cflags="-I${prefix}/include"/>
+  </export>
+</package>

@@ -1,0 +1,18 @@
+<package>
+  <name>libmesasr</name>
+  <version>1.6.0</version>
+  <description>This package wraps the libmesasr to use it as a ros dependency</description>
+  <maintainer email="Florian.Weisshardt@ipa.fhg.de">Florian Weisshardt</maintainer>
+  <license>LGPL</license>
+
+  <url type="website">http://ros.org/wiki/libmesasr</url>
+  <url type="bugtracker">http://care-o-bot.org/trac</url>
+
+  <author>Florian Weisshardt</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+    <cpp lflags="-Wl,-rpath,${prefix}/common/lib -L${prefix}/common/lib -lmesasr" cflags="-I${prefix}/common/include -I${prefix}/common/include/libmesasr"/>
+  </export>
+</package>
